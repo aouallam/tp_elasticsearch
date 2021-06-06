@@ -20,15 +20,34 @@ Une fois l'importation terminée il est necssaire de remplir les bonnes informat
 
 2- Dans le dossier ./backend executez les commandes suivantes : \
 
-*installation des packages  :
+** installation des packages  :
 
 ### npm install 
 ou
 ### yarn install
 
-*Exécution ds scripts : 
+** Exécution des scripts : 
 
 ### npm start 
 ou
-## yarn start
+### yarn start
+
+** Exécutez la requête suivante pour permettre l'initialisation de la base de données et l'importation des modèles : \
+http://localhost:8081/initialisation-bdd \
+
+3- Dans le dossier ./frontend executez les commandes suivantes : \
+
+** installation des packages  :
+
+### npm install 
+ou
+### yarn install
+
+** Exécution des scripts : 
+
+### npm start 
+ou
+### yarn start
+
+
 
