@@ -57,5 +57,16 @@ ou
 * Dashboard Kibana => http://lacalhost:5201
 * Site Insta V2 => http://localhost:3000
 
+## Fonctionnement de l'application :
+
+* Une inscription puis une authentification vous seront demandées à l'exécution du site qui permettra de lier une publication à un utilisateur
+* Une fois connecté vous aller arriver sur la page Feed d'Actus vide l'a où vous aurez la possibilité d'alimenté avec des publications en utilisant le formulaire sur la droite.
+* La création d'une publication implique la création dans la base de données insta_v2 et au même temps dans elasticsearch: si l'index post existe on crée le document sinon a créé l'index: cette opération est effectuée dans le fichier ./backend/controllers/posts.controllers.js.
+* Les recherches se font via l'URL suivante http://localhost:8081/api/instafee/v1/search/posts?tosearch=word, cette URL contient le nom de l'index et la phrase a chercher
+* Les informations de recherche sont affichées sur le site via une barre de recherche et de appèles API
+
+
+## Pour toute question vous pouvez contacter ( Amine OUALLAM ou nedjma LAOUFI)
+
 
 
