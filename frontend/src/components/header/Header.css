@@ -1,0 +1,77 @@
+
+
+
+  .Nav-menus {
+    
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+    margin: 0 auto;
+    padding: 26px 0 ;
+  }
+  .Nav-brand-logo {
+    display: block;
+    position: relative;
+    background-position: -176px 0px;
+    background-image: url(../../assets/images/sprite.png);
+    background-size: 405px 379px;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 176px;
+    text-indent: -1000%
+  }
+
+
+  .Nav-Profil {
+    display: flex;
+    margin-left: auto;   
+  }
+  .User {
+
+      border-radius: 5px;
+      border: 1px solid #000000;
+      background-color: rgb(185, 157, 177);
+      height: 25px;  
+      padding: 2px;    
+      margin-left : 20%;
+      margin-right: 20%;
+    
+  }
+  .User-line {
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  .User-avatar {    
+    width: 30px;
+    height: 30px;
+  }
+  .User-avatar img {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+  }
+ 
+
+
+  
+
+  .menu-head{
+    background-color: #fff;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+    height: 77px;
+    margin-bottom: 77px;
+    position: fixed;
+    top: 0;
+    -webkit-transition: height .2s ease-in-out;
+    transition: height .2s ease-in-out;
+    width: 100%;
+    z-index: 3;
+  }
+  .espaceur{
+    height: 80px;
+  }

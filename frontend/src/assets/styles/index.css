@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+i.Nav {
+  background-color: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+      -webkit-transition: height 0.2s ease-in-out;
+      transition: height 0.2s ease-in-out;
+      height: 77px;
+}
+
+.Nav-menus {
+  display: flex;
+  flex-direction: row;
+  height: 77px;
+  margin: 0 auto;
+  
+}
+
+.Nav-brand-logo {
+  display: block;
+  background-position: -176px 0px;
+  background-image: url(../images/insta.jpg);
+  background-size: 405px 379px;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 136px;
+  text-indent: -1000%
+}
+
+.card-header{
+  background-color: #fff!important;
+}
+
+.input-search{
+  border-radius: 1.25rem!important;
+  margin: 15px 0;
+}
+.input-container{
+  width: 100%;
+  max-width: 614px;
+  position: relative;
+}
+
+.input-container .search-suggestions{
+  min-height: 200px;
+  background-color: white;
+  margin-top: -10px;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.suggestion-container{
+  cursor: pointer;
+}
+.suggestion-container:hover{
+  background-color: #cececec2;
+}
+
