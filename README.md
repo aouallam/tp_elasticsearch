@@ -18,7 +18,7 @@ Une fois l'importation terminée il est necssaire de remplir les bonnes informat
 
 ### docker-compose up
 
-2- Dans le dossier ./backend executez les commandes suivantes : \
+2- Dans le dossier ./backend executez les commandes suivantes : 
 
 ** installation des packages  :
 
@@ -33,9 +33,9 @@ ou
 ### yarn start
 
 ** Exécutez la requête suivante pour permettre l'initialisation de la base de données et l'importation des modèles : \
-http://localhost:8081/initialisation-bdd \
+http://localhost:8081/initialisation-bdd 
 
-3- Dans le dossier ./frontend executez les commandes suivantes : \
+3- Dans le dossier ./frontend executez les commandes suivantes : 
 
 ** installation des packages  :
 
@@ -48,6 +48,14 @@ ou
 ### npm start 
 ou
 ### yarn start
+
+
+## Tester en http les différentes routes de l'application :
+
+* API Insta V2 => http://localhost:8081
+* API Elasticsearch  => http://localhost:9200
+* Dashboard Kibana => http://lacalhost:5201
+* Site Insta V2 => http://localhost:3000
 
 
 
