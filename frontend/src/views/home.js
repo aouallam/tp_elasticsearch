@@ -67,16 +67,37 @@ const App =({GetPosts, posts, NewPost, authInfos}) =>{
     }
   }
 
-  const onFileChange =(e) => {
+  const onFileChange =async (e) => {
     setImg(e.target.files[0])
   }
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
     const dataForm = new FormData() 
     dataForm.append('image_link',img )
     dataForm.set("text",description)
-    NewPost(dataForm, token)
-    window.location.reload(false);
+
+    try{
+      await axios({
+          method: 'post',
+          url: `http://localhost:8081/api/instafee/v1/post/create`,
+          data: dataForm,
+          headers: {
+              "x-access-token": token
+          }  
+
+      })
+      .then(response => {
+        console.log(response)
+        GetPosts()
+        
+      } )
+      .catch(error => console.log(error.response) )
+    }
+    catch(error){
+    }
+
+    /* NewPost(dataForm, token)
+    window.location.reload(false); */
   } 
 
 
