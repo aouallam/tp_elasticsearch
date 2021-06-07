@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "set NODE_ENV=localhost && nodemon server.js",
-    "start": "set NODE_ENV=development && nodemon server.js"
+    "test": "set NODE_ENV=localhost && node server.js",
+    "start": "set NODE_ENV=development && node server.js"
   },
   "repository": "",
   "author": "Amine OUALLAM",
