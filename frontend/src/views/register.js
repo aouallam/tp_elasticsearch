@@ -141,7 +141,7 @@ const Register =({RegisterUser, resultRegister}) =>{
                                 </div>
                                 <div className='text-danger'>
                                     {
-                                        send && resultRegister.status !== 201 ? "***" + resultRegister.data.error : null
+                                        send && resultRegister.status !== 201 ? "*** Erreur" : null
                                     }
                                      
                                 </div>

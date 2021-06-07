@@ -24,7 +24,6 @@ const Posts = (state = initialState, action) =>{
 
             return Object.assign({},state,{
                 add: action.payload,
-                list: newStateAdd
             })
         
         default:
